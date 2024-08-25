@@ -7,4 +7,4 @@ swift build -c release
 
 mkdir -p "$TARGET_DIR/Assets"
 
-cp -r "$SOURCE_DIR/"* "$TARGET_DIR/Assets/" > cp.log 2>&1
+cp -r "$SOURCE_DIR/"* "$TARGET_DIR/Assets/"
