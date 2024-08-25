@@ -4,13 +4,11 @@ import Foundation;
 Raylib.initWindow(960, 540, "TestSwift")
 Raylib.setTargetFPS(60)
 
-
 let game = Game()
 
-while Raylib.windowShouldClose == false {
+while !Raylib.windowShouldClose {
     game.update(Raylib.getFrameTime())
     
-
     Raylib.beginDrawing()
     Raylib.clearBackground(.black)
 

@@ -20,4 +20,9 @@ class Entity : GameObject {
         position.x += velocity.x * delta
         position.y += velocity.y * delta
     }
+
+    
+    func draw() {
+        
+    }
 }

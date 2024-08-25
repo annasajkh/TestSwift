@@ -12,15 +12,13 @@ class Player : Entity {
 
         if Raylib.isKeyDown(KeyboardKey.letterA) {
             direction.x = -1
-        }
-        else if Raylib.isKeyDown(KeyboardKey.letterD) {
+        } else if Raylib.isKeyDown(KeyboardKey.letterD) {
             direction.x = 1
         }
 
         if Raylib.isKeyDown(KeyboardKey.letterW) {
             direction.y = -1
-        }
-        else if Raylib.isKeyDown(KeyboardKey.letterS) {
+        } else if Raylib.isKeyDown(KeyboardKey.letterS) {
             direction.y = 1
         }
 
@@ -33,7 +31,7 @@ class Player : Entity {
         super.update(delta);
     }
 
-    func draw() {
+    override func draw() {
         Raylib.drawTexturePro(Game.spaceShipTexture, 
                               Rectangle(x: 0, y: 0, width: Float(Game.spaceShipTexture.width), height: Float(Game.spaceShipTexture.height)), 
                               Rectangle(x: position.x, y: position.y, width: Float(Game.spaceShipTexture.width) * scale, height: Float(Game.spaceShipTexture.height) * scale), 
