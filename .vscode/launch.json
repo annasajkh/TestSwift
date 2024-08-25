@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:TestSwift}",
+            "name": "Debug TestSwift",
+            "program": "${workspaceFolder:TestSwift}\\.build\\debug\\TestSwift.exe",
+            "preLaunchTask": "swift: Build Debug TestSwift"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:TestSwift}",
+            "name": "Release TestSwift",
+            "program": "${workspaceFolder:TestSwift}\\.build\\release\\TestSwift.exe",
+            "preLaunchTask": "swift: Build Release TestSwift"
+        }
+    ]
+}
